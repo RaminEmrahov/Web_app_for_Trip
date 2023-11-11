@@ -1,0 +1,29 @@
+.whyUs_Section {
+    width: 100%;
+    height: 100vh;
+    /* margin: 0 auto; */
+}
+
+.tripPlan h1 {
+    margin-top: 7.5rem;
+    width: 31rem;
+    text-align: center;
+}
+
+.reason div h4 {
+    font-weight: 600;
+}
+
+.reason {
+    flex: 0 0 calc(33.3% - 30px);
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.reason p {
+    width: 85%;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+}
+

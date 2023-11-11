@@ -1,0 +1,45 @@
+.img-wrapper {
+    background-image: url('../../components/Assets/Contact_img.png');
+}
+
+.contact_section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info-container {
+    width: 68vw;
+    height: 50vh;
+    display: flex;
+    /* justify-content: center; */
+    gap: 2.5rem;
+}
+.left_contact {
+    width: 54%;
+}
+
+.right_contact {
+/* margin-top: 5px; */
+width: 55%;
+}
+
+.contact-info-container h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.contact-info-container p {
+    line-height: 1.5rem;
+    margin-bottom: 9px;
+}
+
+.contact-section {
+    margin-bottom: 1.5rem;
+}
+
+.right {
+    margin-bottom: 2rem;
+}

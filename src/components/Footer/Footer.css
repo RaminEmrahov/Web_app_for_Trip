@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+}
+
+.footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #F5F7FA;
+}
+
+.footer_wrapper {
+    width: 76%;
+    display: flex;
+    margin: 0 auto;
+    gap: 140px;
+    padding: 4.3rem 0 3.2rem;
+}
+
+.tourista {
+    position: relative;
+}
+
+.tourista img {
+    margin-bottom: 0.3rem;
+    width: 8.2rem;
+}
+
+.tourista p {
+    color: #3A4D5A;
+    font-size: 14px;
+    margin-left: 7px;
+    line-height: 24px;
+}
+
+.tourista .copyright {
+    position: absolute;
+    bottom: 12px;
+    font-size: 12px;
+    margin-left: 7px;
+}
+
+.footer h4 {
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer ul li {
+    margin-bottom: 0.8rem;
+    color: #3A4D5A;
+    font-size: 14px;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.navbar {
+    height: 20vh;
+    width: 100%;
+}
+
+.secondary-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F7FA;
+    padding: 0 4.5rem;
+    height: 35%;
+    align-items: center;
+}
+
+.currencies {
+    display: flex;
+    gap: 12px;
+    font-weight: 400;
+}
+
+.US {
+    font-size: 20px;
+    
+}
+
+.nav-menu {
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu li {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4.5rem;
+    align-items: center;
+    height: 65%;
+}
+
+.nav_link {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_link h3 {
+    font-weight: 600;
+}
+
+.nav_buttons .lucky_btn {
+    border-radius: 30px;
+    background-color: #4A21EF;
+    color: #FFFFFF;
+    border: none; 
+    padding: 15px 25px;    
+    cursor: pointer; 
+    font-size: 16px;
+}
+
+.nav_buttons .login_btn {
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    color: #4A21EF;
+    padding: 15px 30px;
+    border: 2px solid #4A21EF;
+    font-weight: 600;
+    margin-left: 20px;
+}

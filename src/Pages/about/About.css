@@ -1,0 +1,21 @@
+.img-wrapper {
+    background-image: url('../../components/Assets/About_img.png');
+}
+
+.About_section {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About_container {
+    width: 39.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    line-height: 24px;
+}

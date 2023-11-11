@@ -1,0 +1,48 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 97vh;
+    overflow: hidden;
+  }
+  
+  .video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 3.4rem; /* 100px from the left side */
+    right: 3.4rem; /* 100px from the right side */
+    width: calc(100% - 6.8rem); /* To make the video container fill the space between the left and right margins */
+    height: 100%;
+  }
+  
+  .video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .video-child, h1, p {
+    position: relative;
+    z-index: 1;
+  }
+
+  .video-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-text h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  .video-text p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 1rem;
+  }
