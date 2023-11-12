@@ -7,6 +7,11 @@ import { FaBus } from 'react-icons/fa';
 import { PiNotebook } from 'react-icons/pi';
 import { MdAttachMoney } from 'react-icons/md';
 import { LuBaby } from 'react-icons/lu';
+import { AiOutlineCalendar } from 'react-icons/ai';
+import { BsSun } from 'react-icons/bs';
+import { AiOutlineGlobal } from 'react-icons/ai';
+import { LuDollarSign } from 'react-icons/lu';
+import { RiSpeakLine } from 'react-icons/ri'
 
 
 export const Data = {
@@ -151,5 +156,37 @@ export const questions = [
     {
         id: '05',
         title: 'What are the visa requirements for popular tourist destinations?'
+    }
+]
+
+export const statisticss = [
+    {
+        icon: <AiOutlineCalendar />,
+        title: 'BEST TIME TO VISIT',
+        text1: 'High s/ May-Sept'
+    },
+    {
+        icon: <BsSun />,
+        title: 'CLIMATE',
+        text1: 'High 32°C',
+        text2: 'Low 0°C'
+    },
+    {
+        icon: <AiOutlineGlobal />,
+        title: 'TIMEZONE',
+        text1: 'Central European',
+        text2: 'Time (UTC +1)'
+    },
+    {
+        icon: <LuDollarSign />,
+        title: 'CURRENCY',
+        text1: 'Euro',
+        text2: 'Dollar'
+    },
+    {
+        icon: <RiSpeakLine />,
+        title: 'LOCAL LANGUAGE',
+        text1: 'Italian',
+        text2: 'English'
     }
 ]

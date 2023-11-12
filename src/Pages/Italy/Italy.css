@@ -1,11 +1,17 @@
-.whyUs_Section {
+.video-wrapper img {
     width: 100%;
-    height: 100vh;
-    /* margin: 0 auto; */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
+/* .tripPlan_Section {
+    width: 100%;
+    height: 100vh;
+} */
+
 .tripPlan h1 {
-    margin-top: 7.5rem;
+    /* margin-top: 7.5rem; */
     width: 31rem;
     text-align: center;
 }
@@ -27,3 +33,53 @@
     margin-top: 0.5rem;
 }
 
+.italy_btn {
+    border-radius: 30px;
+    background-color: #4A21EF;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1.7rem;
+    z-index: 1;
+}
+
+.statistics_wrapper {
+    width: 70vw;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* justify-content: center; */
+    position: absolute;
+    bottom: 0;
+    left: 240px;
+}
+
+.statistic {
+    width: 22%;
+    z-index: 1;
+    display: flex;
+    gap: 1rem;
+    border-right: 1px solid #FFFFFF;
+}
+
+.statistic span {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.statistic:first-child h3 {
+    width: 130px;
+}
+
+.each_statistic h3 {
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.each_statistic p {
+    font-weight: 400;
+}

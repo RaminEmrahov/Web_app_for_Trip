@@ -1,17 +1,19 @@
-/* ----------------------------------------------------------------------------- */
-/* Why us section */
-
-
 .whyUs {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.whyUs_Section {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
 .whyUs h1 {
     font-size: 36px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.7rem;
 }
 
 .reasons {
@@ -20,20 +22,16 @@
     gap: 40px;
     justify-content: space-between;
     width: calc(100% - 144px);
-    /* gap: 24px; */
 }
 
 .reason {
-    /* max-width: calc(33.3% - 50px); */
     flex: 0 0 calc(33.3% - 40px);
     display: flex;
     align-items: center;
     gap: 15px;
-    /* width: 100%; */
     background-color: #F5F7FA;
     border-radius: 20px;
-    padding: 25px;  
-    /* width: 33.3%; */
+    padding: 25px;
 }
 
 .reason span {

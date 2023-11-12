@@ -17,7 +17,9 @@ function Destinations() {
             <source src={require('../../components/Assets/Destinations.mp4')} type='video/mp4' />
           </video>
         </div>
-        <VideoPlace text='Explore places on Tourista' description="Destinations" />
+        <VideoPlace
+          text='Explore places on Tourista'
+          description="Destinations" />
       </div>
 
       <section className='destination_Section'>
@@ -34,8 +36,8 @@ function Destinations() {
           ))}
         </div>
       </section>
-           <JoinUsSection/>
-           <Footer/>       
+      <JoinUsSection />
+      <Footer />
 
     </>
   );

@@ -8,9 +8,9 @@
   .video-wrapper {
     position: absolute;
     top: 0;
-    left: 3.4rem; /* 100px from the left side */
-    right: 3.4rem; /* 100px from the right side */
-    width: calc(100% - 6.8rem); /* To make the video container fill the space between the left and right margins */
+    left: 3.4rem;
+    right: 3.4rem; 
+    width: calc(100% - 6.8rem); 
     height: 100%;
   }
   
