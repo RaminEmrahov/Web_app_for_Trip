@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import ImagePlace from '../../components/ImagePlace/ImagePlace';
 import './Faq.css';
 import Footer from '../../components/Footer/Footer';
+import Faq_img from '../../components/Assets/Faq_img.png'
 
 const FaqItem = ({ question }) => {
     const [isExpanded, setExpanded] = useState(false);
@@ -38,9 +39,9 @@ function Faq() {
     return (
         <>
             <Navbar />
-            <ImagePlace text='FAQ' description='Unlocking the Mysteries of Travel: Your Questions, Our Journey.' />
+            <ImagePlace text='FAQ' description='Unlocking the Mysteries of Travel: Your Questions, Our Journey.' backgroundImage={Faq_img}/>
             <div className='faq_section'>
-                <div className='faq_wrapper'>
+                <div className='faq_wrapper' >
                     {questions.map((question) => (
                         <FaqItem key={question.id} question={question} />
                     ))}

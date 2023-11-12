@@ -5,6 +5,7 @@ import { countriess } from '../../utils/data';
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
 import Footer from '../../components/Footer/Footer';
 import './destinations.css'
+import { Link } from 'react-router-dom';
 
 function Destinations() {
   return (
@@ -26,7 +27,7 @@ function Destinations() {
               <h2>{Object.keys(continentObj)[0]}</h2>
               <ul>
                 {continentObj[Object.keys(continentObj)[0]].map((country, index) => (
-                  <li key={index}>{country}</li>
+                  <Link to='/Italy'><li key={index}>{country}</li></Link>
                 ))}
               </ul>
             </div>

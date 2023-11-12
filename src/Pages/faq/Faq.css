@@ -1,7 +1,3 @@
-.img-wrapper {
-    background-image: url('../../components/Assets/Faq_img.png');
-}
-
 .faq_section {
     width: 100%;
     height: 100vh;
@@ -13,7 +9,6 @@
 .faq_wrapper {
     width: 66vw;
     height: 78vh;
-    /* background-color: aqua; */
 }
 
 .surface {
@@ -23,7 +18,6 @@
 }
 
 .list {
-    /* background-color: brown; */
     width: calc(100% - 50px);
     display: flex;
     gap: 2.5rem;
@@ -37,7 +31,7 @@
 
 .content {
     width: 100%;
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
     gap: 1rem;
@@ -61,8 +55,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-    /* position: absolute; */
-    /* right: 0; */
     transition: transform 0.3s, background-color 0.3s;
 }
 
@@ -70,10 +62,10 @@
     transform: rotate(135deg);
     background-color: #4A21EF;
     color: #FFFFFF;
-  }
+}
 
 .expansion_text {
     width: 80%;
-    padding-top: 2rem; /* Adjust as needed */
+    padding-top: 2rem;
     margin-left: 5.5rem;
-  }
+}

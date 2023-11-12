@@ -32,3 +32,13 @@
     flex-direction: column;
     gap: 1.1rem;
 }
+
+.country_wrapper ul li {
+    color: #141D24;
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    color: #4A21EF;
+    transform: scale(1.2);
+}

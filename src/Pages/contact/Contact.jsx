@@ -6,12 +6,13 @@ import { contact, contactInfoData } from '../../utils/data'
 import BlueSection from '../../components/BlueSection/BlueSection'
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection'
 import Footer from '../../components/Footer/Footer'
+import Contact_img from '../../components/Assets/Contact_img.png'
 
 const ContactInfo = () => {
     return (
         <>
             <Navbar />
-            <ImagePlace text='Contact us' description='Your Journey Begins with a Conversation - Reach Out to Us Today!' />
+            <ImagePlace text='Contact us' description='Your Journey Begins with a Conversation - Reach Out to Us Today!' backgroundImage={Contact_img}/>
             <div className='contact_section'>
                 <div className="contact-info-container">
                     <div className='left_contact'>
