@@ -14,16 +14,15 @@
     width: 68vw;
     height: 50vh;
     display: flex;
-    /* justify-content: center; */
     gap: 2.5rem;
 }
+
 .left_contact {
     width: 54%;
 }
 
 .right_contact {
-/* margin-top: 5px; */
-width: 55%;
+    width: 55%;
 }
 
 .contact-info-container h2 {
@@ -31,6 +30,7 @@ width: 55%;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
+
 .contact-info-container p {
     line-height: 1.5rem;
     margin-bottom: 9px;

@@ -4,7 +4,7 @@ import BlueSection from '../../components/BlueSection/BlueSection'
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection'
 import Footer from '../../components/Footer/Footer'
 import WhyUsGuidance from '../../components/WhyUS/WhyUsGuidance'
-import { Reasons2, statistics } from '../../utils/data'
+import { Reasons2, AvailableTrips, Attractions } from '../../utils/data'
 import './Italy.css'
 import VideoPlace from '../../components/VideoPlace/VideoPlace'
 // import ImagePlace from '../../components/ImagePlace/ImagePlace'
@@ -13,6 +13,9 @@ import Italyy_img from '../../components/Assets/Italy_img.png'
 import { statisticss } from '../../utils/data'
 import Reviews from '../../components/ReviewSection/Reviews'
 import { AiFillStar } from 'react-icons/ai'
+import CardItem from '../../components/Card/CardItem'
+import CardItem2 from '../../components/Card/CardItem2'
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
 
 function Italy() {
     const stars = Array(5).fill(<AiFillStar />);
@@ -49,6 +52,9 @@ function Italy() {
                 </VideoPlace>
             </div>
 
+            <CardItem title='Available trips' trips={AvailableTrips} />
+            <Map />
+            <CardItem2 title='Must-see attractions for your itinerary' tripss={Attractions} />
             <Reviews text='We have a very good time all the way. The Capri boat ride is excellent and so much fun with the crew! They are awesome.'
                 text1='Vivian Lim'
                 text2={coloredStars}
@@ -66,3 +72,27 @@ function Italy() {
 }
 
 export default Italy
+
+
+export function Map() {
+    return (
+        <div className='map_section'>
+            <div className='map_header'>
+                <div className='map_header_wrapper'>
+                    <h2>Tops things to do</h2>
+                    <div className='left_right'>
+                        <MdKeyboardArrowLeft className='lr_icon' />
+                        <MdKeyboardArrowRight className='lr_icon' />
+                    </div>
+                </div>
+            </div>
+
+            <div className='thing'>
+                <img src={Italy_img} alt="italyImage" />
+                <div className='thing__content'>
+                    <h4>Have the drive of your life on the cliff roads of the AAmalfi Coast</h4>
+                </div>
+            </div>
+        </div>
+    )
+}

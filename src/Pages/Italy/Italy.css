@@ -76,3 +76,69 @@
 .each_statistic p {
     font-weight: 400;
 }
+
+.map_section {
+    background-image: url(../../components//Assets/Map\ Italy.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.map_header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #97A5B2 0%, rgba(151, 165, 178, 0) 100%);
+}
+
+.map_header_wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 9rem);
+}
+
+.map_header_wrapper h2 {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.left_right {
+    display: flex;
+    gap: 1rem;
+}
+
+.lr_icon {
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.thing {
+    width: 20rem;
+    position: absolute;
+    right: 10rem;
+    bottom: 4rem;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #E3E7EB;
+    border-radius: 20px;
+}
+
+.thing img {
+    width: 28vw;
+}
+
+.thing__content {
+    font-size: 14px;
+}
+
+.thing__content h4 {
+    width: 100%;
+    margin: 0 auto;
+}

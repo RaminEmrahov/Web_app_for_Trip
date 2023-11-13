@@ -12,6 +12,7 @@ import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
 import Footer from '../../components/Footer/Footer';
 import Home_img from '../../components/Assets/Home_img.png'
 import CardItem from '../../components/Card/CardItem';
+import { BsArrowUpShort } from 'react-icons/bs'
 
 
 
@@ -54,9 +55,23 @@ function HomePage() {
             <CardItem title='Asia' trips={Europe} />
             <BlueSection />
             <JoinUsSection />
+            <Back />
             <Footer />
         </>
     );
 }
 
 export default HomePage;
+
+
+export const Back = () => {
+    const handleUpButtonClick = () => {
+        window.scrollTo({ top: 0 });
+    };
+    return (
+        <div className='back_to_section' >
+            <BsArrowUpShort className='back-to-top-button' onClick={handleUpButtonClick} />
+        </div>
+    )
+}
+

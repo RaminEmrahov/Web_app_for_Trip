@@ -13,16 +13,14 @@ function CardItem({ title, trips }) {
                     {trips.map((card, index) => (
                         <div key={index} className='cardItem'>
                             <img src={card.image} alt="tripImage" />
-
                             <FiBookmark className='car__bookmark' />
-
                             <div className='card__content'>
                                 <div className='upper__text'>
                                     <span className='tripCountry'>{card.country}</span>
                                     <h3 className='tripCity'>{card.city}</h3>
                                 </div>
                                 <div className='button__text'>
-                                    <span className='tripTime'>{card.time}</span>
+                                    <span className='tripTime'>{card.time ? card.item : card.plans}</span>
                                     <div>
                                         <p>From</p>
                                         <p className='tripPrice'>{card.price}</p>

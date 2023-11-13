@@ -6,4 +6,5 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }

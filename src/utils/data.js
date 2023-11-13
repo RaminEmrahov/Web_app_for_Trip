@@ -6,12 +6,6 @@ import { PiLightbulbFilamentLight, PiNotebook } from 'react-icons/pi';
 import { LuBaby, LuDollarSign } from 'react-icons/lu';
 import { AiOutlineCalendar, AiOutlineGlobal } from 'react-icons/ai';
 import { RiSpeakLine } from 'react-icons/ri'
-// import { FaBus } from 'react-icons/fa';
-// import { PiNotebook } from 'react-icons/pi';
-// import { MdAttachMoney } from 'react-icons/md';
-// import { BsSun } from 'react-icons/bs';
-// import { AiOutlineGlobal } from 'react-icons/ai';
-// import { LuDollarSign } from 'react-icons/lu';
 
 import HomeTrend1 from '../components/Assets/Home_trending1.png'
 import HomeTrend2 from '../components/Assets/Home_trending2.png'
@@ -29,6 +23,16 @@ import Asia1 from '../components/Assets/Asia1.png'
 import Asia2 from '../components/Assets/Asia2.png'
 import Asia3 from '../components/Assets/Asia3.png'
 
+import Destination1 from '../components/Assets/Destination1.png'
+import Destination2 from '../components/Assets/Destination2.png'
+import Destination3 from '../components/Assets/Destination3.png'
+import Destination4 from '../components/Assets/Destination4.png'
+import Destination5 from '../components/Assets/Destination5.png'
+import Destination6 from '../components/Assets/Destination6.png'
+
+import Attraction1 from '../components/Assets/Attractions1.png'
+import Attraction2 from '../components/Assets/Attractions2.png'
+import Attraction3 from '../components/Assets/Attractions3.png'
 
 export const Data = {
     menu: {
@@ -301,5 +305,82 @@ export const Asia = [
         city: 'A Taste Of Taiwan',
         time: '7 days',
         price: '$1900.00'
+    }
+]
+
+export const Top_Destinations = [
+    {
+        image: Destination1,
+        country: 'ITALY TRIP',
+        city: 'International Italy',
+        plans: '34 available trip plans',
+        price: '$199.00'
+    },
+    {
+        image: Destination2,
+        country: 'PORTUGAL TRIP',
+        city: 'International Portugal',
+        plans: '54 available trip plans',
+        price: '$250.00'
+    },
+    {
+        image: Destination3,
+        country: 'TURKIYE TRIP',
+        city: 'International Turkiye',
+        plans: '19 available trip plans',
+        price: '$400.00'
+    },
+    {
+        image: Destination4,
+        country: 'ICELAND TRIP',
+        city: 'International Iceland',
+        plans: '105 available trip plans',
+        price: '$299.00'
+    },
+    {
+        image: Destination5,
+        country: 'COSTA RICA TRIP',
+        city: 'International Costa Rica',
+        plans: '23 available trip plans',
+        price: '$250.00'
+    },
+    {
+        image: Destination6,
+        country: 'ARGENTINA TRIP',
+        city: 'International Argentina',
+        plans: '87 available trip plans',
+        price: '$400.00'
+    }
+]
+
+const newCityValues = [
+    'Roma',
+    'Foodie Puglia',
+    'Foodie Puglia',
+    'Foodie Puglia',
+    'Foodie Puglia',
+    'Foodie Puglia'
+];
+
+export const AvailableTrips = Top_Destinations.map((destination, index) => ({
+    ...destination,
+    city: newCityValues[index]
+}));
+
+export const Attractions = [
+    {
+        image: Attraction1,
+        country: 'Vatican museums',
+        description: "Founded by Pope Julius II in the early 16th century and enlarged by successive pontiffs, the Vatican..."
+    },
+    {
+        image: Attraction2,
+        country: 'Colosseum',
+        description: 'Everyone wants to see the Colosseum, and it doesn’t disappoint, especially if accompanied by...'
+    },
+    {
+        image: Attraction3,
+        country: 'St Peter’s basilica',
+        description: "In the city of outstanding churches, none can hold a candle to St Peter's, Italy’s largest, richest and..."
     }
 ]

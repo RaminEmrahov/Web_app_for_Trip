@@ -1,12 +1,12 @@
 .cards_section {
     width: 100%;
-    height: 76vh;
+    height: auto;
 }
 
 .cardList {
-    width: calc(100% - 9rem);
+    width: calc(100% - 10rem);
     height: 95%;
-    margin: 0 auto;
+    margin: 8rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +17,7 @@
 .cards {
     display: flex;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .cardItem {
@@ -74,4 +75,19 @@
 .button__text .tripPrice {
     color: #141D24;
     font-weight: 600;
+}
+
+.description_text {
+    width: 382px;
+    color: #141D24;
+}
+
+.cardss {
+    display: flex;
+    gap: 4rem;
+}
+
+.places {
+    font-weight: 600;
+
 }
