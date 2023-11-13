@@ -6,13 +6,13 @@ import Navbar from '../../components/Navbar/Navbar';
 import WhyUsGuidance from '../../components/WhyUS/WhyUsGuidance';
 import Expert from '../../components/LocalExpertSection/Expert';
 import Reviews from '../../components/ReviewSection/Reviews';
-import { Reasons, productData2 } from '../../utils/data';
+import { Europe, Reasons, productData1, productData2 } from '../../utils/data';
 import BlueSection from '../../components/BlueSection/BlueSection';
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
 import Footer from '../../components/Footer/Footer';
 import Home_img from '../../components/Assets/Home_img.png'
 import CardItem from '../../components/Card/CardItem';
-import { productData1 } from '../../utils/data';
+
 
 
 function HomePage() {
@@ -50,6 +50,8 @@ function HomePage() {
                 text3='Local expert in Portugal'
                 backgroundImage={Home_img}
             />
+            <CardItem title='Europe' trips={Europe} />
+            <CardItem title='Asia' trips={Europe} />
             <BlueSection />
             <JoinUsSection />
             <Footer />

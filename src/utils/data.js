@@ -21,13 +21,13 @@ import HomeBrand1 from '../components/Assets/Home_brand1.png'
 import HomeBrand2 from '../components/Assets/Home_brand2.png'
 import HomeBrand3 from '../components/Assets/Home_brand3.png'
 
-// import Europe1 from '../components/Assets/Europe1.png'
-// import Europe2 from '../components/Assets/Europe2.png'
-// import Europe3 from '../components/Assets/Europe3.png'
+import Europe1 from '../components/Assets/Europe1.png'
+import Europe2 from '../components/Assets/Europe2.png'
+import Europe3 from '../components/Assets/Europe3.png'
 
-// import Asia1 from '../components/Assets/Asia1.png'
-// import Asia2 from '../components/Assets/Asia2.png'
-// import Asia3 from '../components/Assets/Asia3.png'
+import Asia1 from '../components/Assets/Asia1.png'
+import Asia2 from '../components/Assets/Asia2.png'
+import Asia3 from '../components/Assets/Asia3.png'
 
 
 export const Data = {
@@ -253,5 +253,53 @@ export const productData2 = [
         city: 'TURKEY TRIP',
         time: '7 days',
         price: '$400.00'
+    }
+]
+
+export const Europe = [
+    {
+        image: Europe1,
+        country: 'ICELAND TRIP',
+        city: 'Volcanic Iceland',
+        time: '7 days',
+        price: '$2299.00'
+    },
+    {
+        image: Europe2,
+        country: 'SCOTLAND TRIP',
+        city: 'The Scottish Highlands',
+        time: '7 days',
+        price: '$1687.00'
+    },
+    {
+        image: Europe3,
+        country: 'PORTUGAL TRIP',
+        city: 'Atlantic Azores',
+        time: '6 days',
+        price: '$1220.00'
+    }
+]
+
+export const Asia = [
+    {
+        image: Asia1,
+        country: 'CHINA TRIP',
+        city: 'Icons Of China',
+        time: '5 days',
+        price: '$1399.00'
+    },
+    {
+        image: Asia2,
+        country: 'THAILAND TRIP',
+        city: 'Cambodia & Vietnam',
+        time: '7 days',
+        price: '$2350.00'
+    },
+    {
+        image: Asia3,
+        country: 'TAIWAN TRIP',
+        city: 'A Taste Of Taiwan',
+        time: '7 days',
+        price: '$1900.00'
     }
 ]
