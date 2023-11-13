@@ -38,7 +38,7 @@
     transition: transform 0.2s;
 }
 
-ul li:hover {
+.country_wrapper ul li:hover {
     color: #4A21EF;
     transform: scale(1.2);
 }

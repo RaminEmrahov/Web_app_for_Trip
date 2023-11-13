@@ -6,6 +6,8 @@ import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
 import Footer from '../../components/Footer/Footer';
 import './destinations.css'
 import { Link } from 'react-router-dom';
+import Reviews from '../../components/ReviewSection/Reviews';
+import Destination_img from '../../components/Assets/Destination_img.png'
 
 function Destinations() {
   return (
@@ -36,6 +38,19 @@ function Destinations() {
           ))}
         </div>
       </section>
+
+      <Reviews text='“Tiago put together an epic itinerary for me and my friends. He showed us some hidden
+                            hiking trails and amazing local food spots.
+                            He even met us for a coffee to make sure we
+                            had everything we needed.'
+        strong_text='Thanks Tiago!”'
+        testimonial_info='Charlie, rappelling down a 370-foot waterfall'
+        region_name='The Azores'
+        text1='Trip crafted by'
+        text2='Tiago'
+        text3='Local expert in Portugal'
+        backgroundImage={Destination_img}
+      />
       <JoinUsSection />
       <Footer />
 

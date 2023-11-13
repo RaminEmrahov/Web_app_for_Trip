@@ -10,12 +10,12 @@ import Blogg from '../../components/Assets/Blog_img.png'
 function Blog() {
   return (
     <>
-        <Navbar/>
-        <ImagePlace text='Blog' description='Blog articles for "Inspiration".' backgroundImage={Blogg}/>
-    
-        <BlueSection/>
-        <JoinUsSection/>
-        <Footer/>
+      <Navbar />
+      <ImagePlace text='Blog' description='Blog articles for "Inspiration".' backgroundImage={Blogg} />
+
+      <BlueSection />
+      <JoinUsSection />
+      <Footer />
     </>
   )
 }

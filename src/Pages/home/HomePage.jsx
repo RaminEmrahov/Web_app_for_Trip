@@ -10,6 +10,7 @@ import { Reasons } from '../../utils/data';
 import BlueSection from '../../components/BlueSection/BlueSection';
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
 import Footer from '../../components/Footer/Footer';
+import Home_img from '../../components/Assets/Home_img.png'
 
 function HomePage() {
     return (
@@ -32,7 +33,18 @@ function HomePage() {
             </div>
             <WhyUsGuidance title="Why us?" reasons={Reasons} />
             <Expert />
-            <Reviews />
+            <Reviews text='“Tiago put together an epic itinerary for me and my friends. He showed us some hidden
+                            hiking trails and amazing local food spots.
+                            He even met us for a coffee to make sure we
+                            had everything we needed.'
+                strong_text='Thanks Tiago!”'
+                testimonial_info='Charlie, rappelling down a 370-foot waterfall'
+                region_name='The Azores'
+                text1='Trip crafted by'
+                text2='Tiago'
+                text3='Local expert in Portugal'
+                backgroundImage={Home_img}
+            />
             <BlueSection />
             <JoinUsSection />
             <Footer />
