@@ -1,17 +1,33 @@
-import { FaMapMarkedAlt } from 'react-icons/fa';
+import { FaMapMarkedAlt, FaBus } from 'react-icons/fa';
 import { FiBriefcase } from 'react-icons/fi';
-import { MdPersonOutline } from 'react-icons/md';
-import { BsCardChecklist } from 'react-icons/bs';
-import { PiLightbulbFilamentLight } from 'react-icons/pi';
-import { FaBus } from 'react-icons/fa';
-import { PiNotebook } from 'react-icons/pi';
-import { MdAttachMoney } from 'react-icons/md';
-import { LuBaby } from 'react-icons/lu';
-import { AiOutlineCalendar } from 'react-icons/ai';
-import { BsSun } from 'react-icons/bs';
-import { AiOutlineGlobal } from 'react-icons/ai';
-import { LuDollarSign } from 'react-icons/lu';
+import { MdPersonOutline, MdAttachMoney } from 'react-icons/md';
+import { BsCardChecklist, BsSun } from 'react-icons/bs';
+import { PiLightbulbFilamentLight, PiNotebook } from 'react-icons/pi';
+import { LuBaby, LuDollarSign } from 'react-icons/lu';
+import { AiOutlineCalendar, AiOutlineGlobal } from 'react-icons/ai';
 import { RiSpeakLine } from 'react-icons/ri'
+// import { FaBus } from 'react-icons/fa';
+// import { PiNotebook } from 'react-icons/pi';
+// import { MdAttachMoney } from 'react-icons/md';
+// import { BsSun } from 'react-icons/bs';
+// import { AiOutlineGlobal } from 'react-icons/ai';
+// import { LuDollarSign } from 'react-icons/lu';
+
+import HomeTrend1 from '../components/Assets/Home_trending1.png'
+import HomeTrend2 from '../components/Assets/Home_trending2.png'
+import HomeTrend3 from '../components/Assets/Home_trending3.png'
+
+import HomeBrand1 from '../components/Assets/Home_brand1.png'
+import HomeBrand2 from '../components/Assets/Home_brand2.png'
+import HomeBrand3 from '../components/Assets/Home_brand3.png'
+
+// import Europe1 from '../components/Assets/Europe1.png'
+// import Europe2 from '../components/Assets/Europe2.png'
+// import Europe3 from '../components/Assets/Europe3.png'
+
+// import Asia1 from '../components/Assets/Asia1.png'
+// import Asia2 from '../components/Assets/Asia2.png'
+// import Asia3 from '../components/Assets/Asia3.png'
 
 
 export const Data = {
@@ -188,5 +204,54 @@ export const statisticss = [
         title: 'LOCAL LANGUAGE',
         text1: 'Italian',
         text2: 'English'
+    }
+]
+
+
+export const productData1 = [
+    {
+        image: HomeTrend1,
+        country: 'SPAIN TRIP',
+        city: 'Magical Madrid To Marrakech By Train',
+        time: '12 days',
+        price: '$1299.00'
+    },
+    {
+        image: HomeTrend2,
+        country: 'ITALY TRIP',
+        city: 'Spectacular Sicily',
+        time: '5 days',
+        price: '$250.00'
+    },
+    {
+        image: HomeTrend3,
+        country: 'TURKEY TRIP',
+        city: 'TURKEY TRIP',
+        time: '7 days',
+        price: '$400.00'
+    }
+]
+
+export const productData2 = [
+    {
+        image: HomeBrand1,
+        country: 'SPAIN TRIP',
+        city: 'Magical Madrid To Marrakech By Train',
+        time: '12 days',
+        price: '$1299.00'
+    },
+    {
+        image: HomeBrand2,
+        country: 'ITALY TRIP',
+        city: 'Spectacular Sicily',
+        time: '5 days',
+        price: '$250.00'
+    },
+    {
+        image: HomeBrand3,
+        country: 'TURKEY TRIP',
+        city: 'TURKEY TRIP',
+        time: '7 days',
+        price: '$400.00'
     }
 ]

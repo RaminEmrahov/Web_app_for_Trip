@@ -6,11 +6,14 @@ import Navbar from '../../components/Navbar/Navbar';
 import WhyUsGuidance from '../../components/WhyUS/WhyUsGuidance';
 import Expert from '../../components/LocalExpertSection/Expert';
 import Reviews from '../../components/ReviewSection/Reviews';
-import { Reasons } from '../../utils/data';
+import { Reasons, productData2 } from '../../utils/data';
 import BlueSection from '../../components/BlueSection/BlueSection';
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
 import Footer from '../../components/Footer/Footer';
 import Home_img from '../../components/Assets/Home_img.png'
+import CardItem from '../../components/Card/CardItem';
+import { productData1 } from '../../utils/data';
+
 
 function HomePage() {
     return (
@@ -31,6 +34,8 @@ function HomePage() {
                     </div>
                 </VideoPlace>
             </div>
+            <CardItem title='Trending now' trips={productData1} />
+            <CardItem title='Brand new trips' trips={productData2} />
             <WhyUsGuidance title="Why us?" reasons={Reasons} />
             <Expert />
             <Reviews text='“Tiago put together an epic itinerary for me and my friends. He showed us some hidden
