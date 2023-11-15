@@ -1,6 +1,5 @@
 import React from 'react'
 import { FiBookmark } from 'react-icons/fi'
-// import { productData1 } from '../../utils/data'
 import './cardItem.css'
 
 function CardItem({ title, trips }) {

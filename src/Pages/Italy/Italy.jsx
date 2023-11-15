@@ -7,9 +7,9 @@ import WhyUsGuidance from '../../components/WhyUS/WhyUsGuidance'
 import { Reasons2, AvailableTrips, Attractions } from '../../utils/data'
 import './Italy.css'
 import VideoPlace from '../../components/VideoPlace/VideoPlace'
-// import ImagePlace from '../../components/ImagePlace/ImagePlace'
-import Italy_img from '../../components/Assets/Italy_placeholder.png'
-import Italyy_img from '../../components/Assets/Italy_img.png'
+import Italy_img from '../../../public/Assets/Italy_placeholder.png'
+import Italyy_img from '../../../public/Assets/Italy_img.png'
+import Blog_img2 from '../../../public/Assets/Blog_img2.png'
 import { statisticss } from '../../utils/data'
 import Reviews from '../../components/ReviewSection/Reviews'
 import { AiFillStar } from 'react-icons/ai'
@@ -88,7 +88,7 @@ export function Map() {
             </div>
 
             <div className='thing'>
-                <img src={Italy_img} alt="italyImage" />
+                <img src={Blog_img2} alt="italyImage" />
                 <div className='thing__content'>
                     <h4>Have the drive of your life on the cliff roads of the AAmalfi Coast</h4>
                 </div>

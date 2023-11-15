@@ -10,7 +10,7 @@ import { Europe, Reasons, productData1, productData2 } from '../../utils/data';
 import BlueSection from '../../components/BlueSection/BlueSection';
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
 import Footer from '../../components/Footer/Footer';
-import Home_img from '../../components/Assets/Home_img.png'
+import Home_img from '../../../public/Assets/Home_img.png'
 import CardItem from '../../components/Card/CardItem';
 import { BsArrowUpShort } from 'react-icons/bs'
 
@@ -23,7 +23,7 @@ function HomePage() {
             <div className='video-container'>
                 <div className='video-wrapper'>
                     <video autoPlay loop muted className='video-background'>
-                        <source src={require('../../components/Assets/Homepage.mp4')} type='video/mp4' />
+                        <source src={require('../../../public/Assets/Homepage.mp4')} type='video/mp4' />
                     </video>
                 </div>
                 <VideoPlace

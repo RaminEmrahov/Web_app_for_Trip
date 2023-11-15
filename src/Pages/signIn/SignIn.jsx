@@ -1,11 +1,11 @@
 import React from "react";
-import Login from "../../components/Assets/Login_page_img.svg"
-import Logo from "../../components/Assets/Logo.svg"
+import Login from "../../../public/Assets/Login_page_img.svg"
+import Logo from "../../../public/Assets/Logo.svg"
 import './SignIn.css'
 import { FcGoogle } from 'react-icons/fc'
 import { BiLogoApple } from 'react-icons/bi'
 import { FaFacebook } from 'react-icons/fa'
-import {AiOutlineEye} from 'react-icons/ai'
+import { AiOutlineEye } from 'react-icons/ai'
 
 
 function SignIn() {
@@ -25,18 +25,18 @@ function SignIn() {
 
                         <div>
                             <label htmlFor="email">Email</label>
-                            <input placeholder="someone@example.com" type="text" id="email"/>
+                            <input placeholder="someone@example.com" type="text" id="email" />
                         </div>
 
-                        <div>
+                        <div className="password_container">
                             <label htmlFor="password">Password</label>
-                            <input type="Password" id="password"/>
-                            <AiOutlineEye className="icon_ai"/>
+                            <input type="Password" id="password" />
+                            <AiOutlineEye className="icon_ai" />
                         </div>
 
                         <a href="">Forgot password?</a>
 
-                        <input  className="btn" type="button" value="Sign in"/>
+                        <input className="btn" type="button" value="Sign in" />
                     </form>
                     <div className="social">
                         <p>or use one of this</p>

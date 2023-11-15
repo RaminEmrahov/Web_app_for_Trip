@@ -7,7 +7,7 @@ import Footer from '../../components/Footer/Footer';
 import './destinations.css'
 import { Link } from 'react-router-dom';
 import Reviews from '../../components/ReviewSection/Reviews';
-import Destination_img from '../../components/Assets/Destination_img.png'
+import Destination_img from '../../../public/Assets/Destination_img.png'
 import CardItem from '../../components/Card/CardItem';
 
 function Destinations() {
@@ -17,7 +17,7 @@ function Destinations() {
       <div className='video-container'>
         <div className='video-wrapper'>
           <video autoPlay loop muted className='video-background'>
-            <source src={require('../../components/Assets/Destinations.mp4')} type='video/mp4' />
+            <source src={require('../../../public/Assets/Destinations.mp4')} type='video/mp4' />
           </video>
         </div>
         <VideoPlace

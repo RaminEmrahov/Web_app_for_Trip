@@ -1,7 +1,7 @@
 import React from 'react'
 import './Expert.css'
-import Photo1 from '../Assets/Callcenter.png'
-import Photo2 from '../Assets/Travel expert.png'
+import Photo1 from '../../../public/Assets/Callcenter.png'
+import Photo2 from '../../../public/Assets/Travel expert.png'
 
 const Expert = () => {
     return (

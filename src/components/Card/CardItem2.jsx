@@ -4,7 +4,6 @@ import './cardItem.css'
 function CardItem2({ title, tripss }) {
     return (
         <div className='cards_section'>
-
             <div className='cardList'>
                 <h1>{title}</h1>
                 <div className='cardss'>

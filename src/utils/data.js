@@ -7,32 +7,38 @@ import { LuBaby, LuDollarSign } from 'react-icons/lu';
 import { AiOutlineCalendar, AiOutlineGlobal } from 'react-icons/ai';
 import { RiSpeakLine } from 'react-icons/ri'
 
-import HomeTrend1 from '../components/Assets/Home_trending1.png'
-import HomeTrend2 from '../components/Assets/Home_trending2.png'
-import HomeTrend3 from '../components/Assets/Home_trending3.png'
+import HomeTrend1 from '../../public/Assets/Home_trending1.png'
+import HomeTrend2 from '../../public/Assets/Home_trending2.png'
+import HomeTrend3 from '../../public/Assets/Home_trending3.png'
 
-import HomeBrand1 from '../components/Assets/Home_brand1.png'
-import HomeBrand2 from '../components/Assets/Home_brand2.png'
-import HomeBrand3 from '../components/Assets/Home_brand3.png'
+import HomeBrand1 from '../../public/Assets/Home_brand1.png'
+import HomeBrand2 from '../../public/Assets/Home_brand2.png'
+import HomeBrand3 from '../../public/Assets/Home_brand3.png'
 
-import Europe1 from '../components/Assets/Europe1.png'
-import Europe2 from '../components/Assets/Europe2.png'
-import Europe3 from '../components/Assets/Europe3.png'
+import Europe1 from '../../public/Assets/Europe1.png'
+import Europe2 from '../../public/Assets/Europe2.png'
+import Europe3 from '../../public/Assets/Europe3.png'
 
-import Asia1 from '../components/Assets/Asia1.png'
-import Asia2 from '../components/Assets/Asia2.png'
-import Asia3 from '../components/Assets/Asia3.png'
+import Asia1 from '../../public/Assets/Asia1.png'
+import Asia2 from '../../public/Assets/Asia2.png'
+import Asia3 from '../../public/Assets/Asia3.png'
 
-import Destination1 from '../components/Assets/Destination1.png'
-import Destination2 from '../components/Assets/Destination2.png'
-import Destination3 from '../components/Assets/Destination3.png'
-import Destination4 from '../components/Assets/Destination4.png'
-import Destination5 from '../components/Assets/Destination5.png'
-import Destination6 from '../components/Assets/Destination6.png'
+import Destination1 from '../../public/Assets/Destination1.png'
+import Destination2 from '../../public/Assets/Destination2.png'
+import Destination3 from '../../public/Assets/Destination3.png'
+import Destination4 from '../../public/Assets/Destination4.png'
+import Destination5 from '../../public/Assets/Destination5.png'
+import Destination6 from '../../public/Assets/Destination6.png'
 
-import Attraction1 from '../components/Assets/Attractions1.png'
-import Attraction2 from '../components/Assets/Attractions2.png'
-import Attraction3 from '../components/Assets/Attractions3.png'
+import Attraction1 from '../../public/Assets/Attractions1.png'
+import Attraction2 from '../../public/Assets/Attractions2.png'
+import Attraction3 from '../../public/Assets/Attractions3.png'
+
+import Blog_art1 from '../../public/Assets/Blog_art1.png'
+import Blog_art2 from '../../public/Assets/Blog_art2.png'
+import Blog_art3 from '../../public/Assets/Blog_art3.png'
+import Blog_art4 from '../../public/Assets/Blog_art4.png'
+import Blog_art5 from '../../public/Assets/Blog_art5.png'
 
 export const Data = {
     menu: {
@@ -381,6 +387,44 @@ export const Attractions = [
     {
         image: Attraction3,
         country: 'St Peter’s basilica',
+        description: "In the city of outstanding churches, none can hold a candle to St Peter's, Italy’s largest, richest and..."
+    }
+]
+
+export const Categories = [
+    'All Articles',
+    'Food & Drink',
+    'Inspiration',
+    'Local Guides',
+    'See & Do',
+    'Travel Tips',
+    'Where to stay'
+]
+
+export const Blog_articles = [
+    {
+        image: Blog_art1,
+        title: 'Food & Drink',
+        description: "Founded by Pope Julius II in the early 16th century and enlarged by successive pontiffs, the Vatican..."
+    },
+    {
+        image: Blog_art2,
+        title: 'See & Do',
+        description: "Everyone wants to see the Colosseum, and it doesn’t disappoint, especially if accompanied by..."
+    },
+    {
+        image: Blog_art3,
+        title: 'Inspiration',
+        description: "Founded by Pope Julius II in the early 16th century and enlarged by successive pontiffs, the Vatican..."
+    },
+    {
+        image: Blog_art4,
+        title: 'Travel Tips',
+        description: "Everyone wants to see the Colosseum, and it doesn’t disappoint, especially if accompanied by..."
+    },
+    {
+        image: Blog_art5,
+        title: 'Food & Drink',
         description: "In the city of outstanding churches, none can hold a candle to St Peter's, Italy’s largest, richest and..."
     }
 ]

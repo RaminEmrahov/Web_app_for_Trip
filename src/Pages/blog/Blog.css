@@ -1,0 +1,72 @@
+.categories_section {
+    height: 27vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories_section ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.categories_section ul li {
+    padding: 12px 24px;
+    background-color: #F5F7FA;
+    border-radius: 100px;
+    /* color: #3A4D5A; */
+    cursor: pointer;
+}
+
+.articles_section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-bottom: 7.5rem;
+}
+
+.blog_articles {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.5rem;
+
+}
+
+.upper_blogs {
+    display: flex;
+    gap: 2rem;
+}
+
+.down_blogs {
+    display: flex;
+    gap: 2rem;
+}
+
+.blog_articles h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.trip_card {
+    width: auto;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #E3E7EB;
+    border-radius: 20px;
+}
+
+.trip_card img {
+    width: 100%;
+}
+
+.trip_card_text {
+    margin: 1rem;
+}
+
+.trip_card_text p {
+    width: 24rem;
+    margin-top: 12px;
+}
