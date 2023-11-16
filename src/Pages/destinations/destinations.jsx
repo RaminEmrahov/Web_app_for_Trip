@@ -1,19 +1,17 @@
 import React from 'react';
 import VideoPlace from '../../components/VideoPlace/VideoPlace';
-import Navbar from '../../components/Navbar/Navbar';
 import { Top_Destinations, countriess } from '../../utils/data';
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
-import Footer from '../../components/Footer/Footer';
 import './destinations.css'
 import { Link } from 'react-router-dom';
 import Reviews from '../../components/ReviewSection/Reviews';
 import Destination_img from '../../../public/Assets/Destination_img.png'
 import CardItem from '../../components/Card/CardItem';
+import Layout from '../../components/Layout';
 
 function Destinations() {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <div className='video-container'>
         <div className='video-wrapper'>
           <video autoPlay loop muted className='video-background'>
@@ -32,7 +30,7 @@ function Destinations() {
               <h2>{Object.keys(continentObj)[0]}</h2>
               <ul>
                 {continentObj[Object.keys(continentObj)[0]].map((country, index) => (
-                  <Link to='/Italy'><li key={index}>{country}</li></Link>
+                  <Link to='/destinations/Italy'><li key={index}>{country}</li></Link>
                 ))}
               </ul>
             </div>
@@ -54,9 +52,7 @@ function Destinations() {
         backgroundImage={Destination_img}
       />
       <JoinUsSection />
-      <Footer />
-
-    </>
+    </Layout>
   );
 }
 

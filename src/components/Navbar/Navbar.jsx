@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react'
 import './Navbar.css'
 import logo from '../../../public/Assets/Logo.svg'
 import { Link } from 'react-router-dom'
@@ -30,12 +29,12 @@ function Navbar() {
                     <h4>Private trips</h4>
                 </div>
                 <div className='nav-logo'>
-                    <img src={logo} alt="" />
+                    <Link to='/'><img src={logo} alt="" /></Link>
                 </div>
                 <div className='nav_buttons'>
                     <button className='lucky_btn'>I'm Feeling Lucky</button>
                     <Link to='/signIn'><button className='login_btn'>Login</button></Link>
-                    
+
                 </div>
             </div>
         </div>

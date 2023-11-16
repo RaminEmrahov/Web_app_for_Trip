@@ -1,21 +1,17 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import VideoPlace from '../../components/VideoPlace/VideoPlace'
-import { BiSearch } from 'react-icons/bi'
 import ImagePlace from '../../components/ImagePlace/ImagePlace'
 import './About.css'
 import WhyUsGuidance from '../../components/WhyUS/WhyUsGuidance'
 import Expert from '../../components/LocalExpertSection/Expert'
 import BlueSection from '../../components/BlueSection/BlueSection'
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection'
-import Footer from '../../components/Footer/Footer'
 import About_img from '../../../public/Assets/About_img.png'
 import { Reasons } from '../../utils/data'
+import Layout from '../../components/Layout'
 
 function About() {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <ImagePlace text='About Us' description='Discover Our Passion for Travel and Adventure.' backgroundImage={About_img} />
       <div className='About_section'>
         <div className='About_container'>
@@ -27,8 +23,7 @@ function About() {
       <Expert />
       <BlueSection />
       <JoinUsSection />
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

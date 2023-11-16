@@ -1,0 +1,144 @@
+.sign_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left_section {
+    width: 50%;
+    height: 100%;
+}
+
+.left_section img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.right_section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right_section .header {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_section .main {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    width: 34rem;
+    margin: 0 auto;
+}
+
+.main .section-1 {
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.section_1 h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.section_1 div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 18px;
+    outline: none;
+    border: none;
+    border: 1px solid #E3E7EB;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    margin: 6px 0 12px;
+}
+
+.password_container {
+    position: relative;
+}
+
+.icon_ai {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+}
+
+form a {
+    text-align: right;
+    font-size: 14px;
+    color: #141D24;
+}
+
+form .btn {
+    background-color: #4A21EF;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 1px solid #E2E8F0;
+    border-radius: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 24px 0 30px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 34rem;
+    text-align: center;
+}
+
+.social p {
+    color: #97A5B2;
+    font-size: 14px;
+    margin: 14px 0 24px;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+}
+
+.icon {
+    border: 1px solid #E3E7EB;
+    border-radius: 4.5rem;
+    font-size: 2.2rem;
+    padding: 5px;
+    width: 10rem;
+}
+
+.blue {
+    color: #1877F2;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.footer_content a {
+    color: #4A21EF;
+}

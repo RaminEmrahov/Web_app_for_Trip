@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
 import ImagePlace from '../../components/ImagePlace/ImagePlace';
 import './Blog.css';
 import BlueSection from '../../components/BlueSection/BlueSection';
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
-import Footer from '../../components/Footer/Footer';
 import Blogg from '../../../public/Assets/Blog_img.png';
 import { Categories, Blog_articles } from '../../utils/data';
+import Layout from '../../components/Layout';
 
 
 function Blog() {
@@ -17,8 +16,7 @@ function Blog() {
   };
 
   return (
-    <>
-      <Navbar />
+    <Layout>
       <ImagePlace text='Blog' description='Blog articles for "Inspiration".' backgroundImage={Blogg} />
 
       <div className='categories_section'>
@@ -70,8 +68,7 @@ function Blog() {
 
       <BlueSection />
       <JoinUsSection />
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

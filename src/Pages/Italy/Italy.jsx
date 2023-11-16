@@ -1,8 +1,6 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
 import BlueSection from '../../components/BlueSection/BlueSection'
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection'
-import Footer from '../../components/Footer/Footer'
 import WhyUsGuidance from '../../components/WhyUS/WhyUsGuidance'
 import { Reasons2, AvailableTrips, Attractions } from '../../utils/data'
 import './Italy.css'
@@ -16,6 +14,7 @@ import { AiFillStar } from 'react-icons/ai'
 import CardItem from '../../components/Card/CardItem'
 import CardItem2 from '../../components/Card/CardItem2'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
+import Layout from '../../components/Layout'
 
 function Italy() {
     const stars = Array(5).fill(<AiFillStar />);
@@ -25,8 +24,7 @@ function Italy() {
         return React.cloneElement(star, { key: index, style: { color } });
     });
     return (
-        <>
-            <Navbar />
+        <Layout>
             <div className='video-container'>
                 <div className='video-wrapper'>
                     <img src={Italy_img} alt="" />
@@ -66,8 +64,7 @@ function Italy() {
                 reasons={Reasons2} />
             <BlueSection />
             <JoinUsSection />
-            <Footer />
-        </>
+        </Layout>
     )
 }
 

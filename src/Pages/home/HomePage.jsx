@@ -2,24 +2,22 @@ import React from 'react';
 import VideoPlace from '../../components/VideoPlace/VideoPlace';
 import './Home.css';
 import { BiSearch } from 'react-icons/bi';
-import Navbar from '../../components/Navbar/Navbar';
 import WhyUsGuidance from '../../components/WhyUS/WhyUsGuidance';
 import Expert from '../../components/LocalExpertSection/Expert';
 import Reviews from '../../components/ReviewSection/Reviews';
 import { Europe, Reasons, productData1, productData2 } from '../../utils/data';
 import BlueSection from '../../components/BlueSection/BlueSection';
 import JoinUsSection from '../../components/JoinUsSection/JoinUsSection';
-import Footer from '../../components/Footer/Footer';
 import Home_img from '../../../public/Assets/Home_img.png'
 import CardItem from '../../components/Card/CardItem';
 import { BsArrowUpShort } from 'react-icons/bs'
+import Layout from '../../components/Layout';
 
 
 
 function HomePage() {
     return (
-        <>
-            <Navbar />
+        <Layout>
             <div className='video-container'>
                 <div className='video-wrapper'>
                     <video autoPlay loop muted className='video-background'>
@@ -56,8 +54,7 @@ function HomePage() {
             <BlueSection />
             <JoinUsSection />
             <Back />
-            <Footer />
-        </>
+        </Layout>
     );
 }
 

@@ -9,18 +9,24 @@ import Destinations from './Pages/destinations/destinations';
 import Contact from './Pages/contact/Contact';
 import Faq from './Pages/faq/Faq';
 import Blog from './Pages/blog/Blog';
+import ForgotPassword from './Pages/forgotPassword/ForgotPassword';
+import TripPlanning from './Pages/tripPlanning/TripPlanning';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        
+
         <Route path='/' element={<HomePage />} />
-        <Route path='/destinations' element={<Destinations />} />
         <Route path='/signIn' element={<SignIn />} />
+        <Route path='/forgotPassword' element={<ForgotPassword />} />
+        <Route path='/tripPlanning' element={<TripPlanning />} />
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
-        <Route path='/Italy' element={<Italy />} />
+        <Route path='/destinations'>
+          <Route index element={<Destinations />} />
+          <Route path=":Italy" element={<Italy />} />
+        </Route>
         <Route path='/contact' element={<Contact />} />
         <Route path='/country' />
         <Route path='/faq' element={<Faq />} />
