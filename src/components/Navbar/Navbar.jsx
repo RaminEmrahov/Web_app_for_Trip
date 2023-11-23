@@ -1,22 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../../../public/Assets/Logo.svg'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
+    const [activeLink, setActiveLink] = useState(null);
+    const handleLinkClick = (index) => {
+        setActiveLink(index);
+    }
+
+
+
     return (
         <div className='navbar'>
             <div className='secondary-navbar'>
                 <ul className='nav-menu'>
-                    <Link to='/about'><li>About us</li></Link>
-                    <Link to='/faq'><li>FAQ</li></Link>
-                    <Link to='/blog'><li>Blog</li></Link>
-                    <Link to='/contact'><li>Contact us</li></Link>
+                    <Link to='/about'><li style={{ color: activeLink === 0 ? '#4A21EF' : '' }} onClick={() => handleLinkClick(0)}>About us</li></Link>
+                    <Link to='/faq'><li style={{ color: activeLink === 1 ? '#4A21EF' : '' }} onClick={() => handleLinkClick(1)}>FAQ</li></Link>
+                    <Link to='/blog'><li style={{ color: activeLink === 2 ? '#4A21EF' : '' }} onClick={() => handleLinkClick(2)}>Blog</li></Link>
+                    <Link to='/contact'><li style={{ color: activeLink === 3 ? '#4A21EF' : '' }} onClick={() => handleLinkClick(3)}>Contact us</li></Link>
                 </ul>
                 <div className='currencies'>
                     <div className='US'>US$</div>
                     <div className='arrow_btn'>
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                             expand_all
                         </span>
                     </div>
@@ -25,7 +32,7 @@ function Navbar() {
             <div className='main-navbar'>
                 <div className='nav_link'>
 
-                    <Link to='/destinations'><h4>Destinations</h4></Link>
+                    <Link to='/destinations'><h4 style={{ color: activeLink === 4 ? '#4A21EF' : '' }} onClick={() => handleLinkClick(4)}>Destinations</h4></Link>
                     <h4>Private trips</h4>
                 </div>
                 <div className='nav-logo'>

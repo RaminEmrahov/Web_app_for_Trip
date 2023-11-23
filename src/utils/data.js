@@ -164,23 +164,18 @@ export const contact = [
 
 export const questions = [
     {
-        id: '01',
         title: 'What are the best tips for finding budget-friendly travel accommodations?'
     },
     {
-        id: '02',
         title: 'How can I find authentic local experiences when traveling?'
     },
     {
-        id: '03',
         title: 'What should I pack for a long-term trip or backpacking adventure?'
     },
     {
-        id: '04',
         title: 'What are some strategies for overcoming jet lag when traveling across time zones?'
     },
     {
-        id: '05',
         title: 'What are the visa requirements for popular tourist destinations?'
     }
 ]

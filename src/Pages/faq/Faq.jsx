@@ -11,8 +11,8 @@ function Faq() {
             <ImagePlace text='FAQ' description='Unlocking the Mysteries of Travel: Your Questions, Our Journey.' backgroundImage={Faq_img} />
             <div className='faq_section'>
                 <div className='faq_wrapper' >
-                    {questions.map((question) => (
-                        <FaqItem key={question.id} question={question} />
+                    {questions.map((question, i) => (
+                        <FaqItem key={i} num={i} title={question.title} />
                     ))}
                 </div>
             </div>
@@ -24,7 +24,7 @@ export default Faq;
 
 
 
-export const FaqItem = ({ question }) => {
+export const FaqItem = ({ title, num }) => {
     const [isExpanded, setExpanded] = useState(false);
 
     const toggleExpansion = () => {
@@ -34,9 +34,9 @@ export const FaqItem = ({ question }) => {
     return (
         <div className='surface'>
             <ul className='list'>
-                <p className='question'>{question.id}</p>
+                <p className='question'>{num < 9 ? `0${num + 1}` : num + 1}</p>
                 <div className='content'>
-                    <li>{question.title}</li>
+                    <li>{title}</li>
                     <button className={`expand-button ${isExpanded ? 'expanded' : ''}`} onClick={toggleExpansion}>
                         +
                     </button>

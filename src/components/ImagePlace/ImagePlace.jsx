@@ -4,7 +4,6 @@ import './ImagePlace.css'
 function ImagePlace({ text, description, btn_text, backgroundImage }) {
     const wrapperStyle = {
         backgroundImage: `url(${backgroundImage})`,
-
     }
     return (
         <div className='img_container'>
